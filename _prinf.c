@@ -17,10 +17,9 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	va_start(arg_param, format)
-		va_start(arg_param, format);
-	 counter = compute(format, options, arg_param);
-	 va_end(arg_param);
-	 return (counter);
-
+	va_start(arg_param, format);
+	va_start(arg_param, format);
+	counter = compute(format, options, arg_param);
+	va_end(arg_param);
+	return (counter);
 }

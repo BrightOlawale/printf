@@ -41,4 +41,5 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 		counter++;
 	}
 	}
+	return (counter);
 }
