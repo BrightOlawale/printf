@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 /**
  *  _writechar - writes the character c to stdout
  *  @c: The character to print
