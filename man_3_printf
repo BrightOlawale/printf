@@ -1,6 +1,9 @@
 .TH man 3 "19th Apirl 2022 "  "_printf man page"
 .SH NAME
 _printf
+An implementation of the printf function.
+.SH SYNOPSIS
+To use this function the #include "main.h" is needed.
 .SH DESCRIPTION
 write output to stdout, the standard output stream
 _printf is a formatting function that is used to print a string to stdout.
@@ -21,5 +24,6 @@ _printf("the multiplication of %d and %d is %d", a * b, mul);
 .RS 0
 %i: To print integers of max and min size of an int type
 .RS 0
+%b: To print a number in binary
 .SH AUTHORS
 Olawale Bright and Agunwa chisom c
