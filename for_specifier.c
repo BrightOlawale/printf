@@ -20,9 +20,3 @@ int print_string(va_list arr_list)
 	}
 	return (i);
 }
-
-int print_percent(va_list arr_list)
-{
-	_writechar('%');
-	return (1);
-}
