@@ -22,4 +22,4 @@ _printf("the multiplication of %d and %d is %d", a * b, mul);
 %i: To print integers of max and min size of an int type
 .RS 0
 .SH AUTHORS
-Olawale Bright and Agunwa chisom
+Olawale Bright and Agunwa chisom c
