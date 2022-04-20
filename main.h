@@ -25,5 +25,8 @@ int _printf(const char *format, ...);
 int _writechar(char);
 int print_char(va_list);
 int print_string(va_list);
+int print_number(va_list args_list);
+int unsigned_integer(va_list arg_list);
+int print_unsgined_number(unsigned int n);
 
 #endif
