@@ -6,6 +6,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct symfun - defines a structure for the specifier and functions
+ *
+ * @symb: The operator
+ * @f: The function associated
+ */
 struct symfun
 {
 	char *symb;
@@ -13,6 +19,7 @@ struct symfun
 };
 typedef struct symfun symbfunc;
 
+/*Main fuctions*/
 int compute(const char *format, symbfunc options[], va_list arg_param);
 int _printf(const char *format, ...);
 int _writechar(char);

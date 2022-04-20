@@ -35,18 +35,13 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 					counter = counter + 1;
 				}
 				else
-				{
 					return (-1);
-				}
 			}
 			i++;
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
-		{
 			_writechar('%');
 			counter++;
-		}
-
 		else
 		{
 			_writechar(format[i]);
