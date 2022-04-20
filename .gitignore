@@ -1,2 +1,12 @@
-test.c
+#!/bin/bash
+
+#ignore Emac buffer generated files
+*~
+*#
+
+#ignore test file
+*test.c
+
+#ignore exe file
+*.exe
 
