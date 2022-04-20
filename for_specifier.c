@@ -22,7 +22,7 @@ int print_string(va_list arr_list)
 
 	s = va_arg(arr_list, char *);
 	if (s == NULL)
-		return (-1);
+		s = "(null)";
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_writechar(s[i]);
