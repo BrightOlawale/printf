@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * compute - takes the main string and all the necessary parameters to
- * print a formated string
+ * compute - takes the all the necessary parameters toprint a formated string
  * @format: A string containing all the desired characters.
  * @options: A list of all the posible functions.
  * @arg_param: A list containing all the argumentents passed to the program.
@@ -39,9 +38,11 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 			}
 			i++;
 		}
-		else if (format[i] == '%' && format[i + 1] == '%')
+		if (format[i] == '%' && format[i + 1] == '%')
+		{
 			_writechar('%');
 			counter++;
+		}
 		else
 		{
 			_writechar(format[i]);
