@@ -29,14 +29,3 @@ int print_string(va_list arr_list)
 	}
 	return (i);
 }
-
-/**
- * print_percent - prints percentage symbol
- * @arr_list: list of arguments
- * Return: Will return the amount of characters printed.
- */
-int print_percent(va_list arr_list)
-{
-	_writechar('%');
-	return (1);
-}
