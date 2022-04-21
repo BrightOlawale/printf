@@ -14,15 +14,19 @@ int _printf(const char *format, ...)
 	{"s", print_string},
 	{"d", print_integer},
 	{"i", print_integer},
+	{"b", print_binary},
+	{"u", unsigned_integer},
+	{"o", print_octal},
+	{"x", print_hex},
+	{"X", print_heX},
 	{NULL, NULL}
 	};
 
 	va_list arg_param;
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
+
 	va_start(arg_param, format);
 	counter = compute(format, options, arg_param);
 	va_end(arg_param);
