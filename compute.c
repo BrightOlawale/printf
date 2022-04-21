@@ -34,7 +34,7 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 			{
 				if (format[i + 1] != '\0')
 				{
-					_writechar(format[i]);
+					_writechar(format[i + 1]);
 					counter = counter + 1;
 				}
 				else
