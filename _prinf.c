@@ -15,11 +15,8 @@ int _printf(const char *format, ...)
 	{"d", print_integer},
 	{"i", print_integer},
 	{"b", print_binary},
-<<<<<<< HEAD
 	{"u", unsigned_integer},
-=======
 	{"o", print_octal},
->>>>>>> 6f3deaace793697c80396af5021903d7aa207056
 	{NULL, NULL}
 	};
 
