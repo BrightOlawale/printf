@@ -15,18 +15,18 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 		{
 			for (j = 0; options[j].symb != NULL; j++)
 			{
-				if (format[i + 1] == '%')
-				{
-					_writechar('%');
-					counter++;
-					break;
-				}
-				else if (format[i + 1] == options[j].symb[0])
+				if (format[i + 1] == options[j].symb[0])
 				{
 					char_no = options[j].f(arg_param);
 					if (char_no == -1)
 						return (-1);
 					counter += char_no;
+					break;
+				}
+				else if (format[i + 1] == '%')
+				{
+					_writechar('%');
+					counter++;
 					break;
 				}
 			}
