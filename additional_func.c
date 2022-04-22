@@ -3,7 +3,7 @@
 
 /**
  * _writebase - send character to be written on standard output
- * @str - ctring to be written
+ * @str: ctring to be written
  */
 
 void _writebase(char *str)
