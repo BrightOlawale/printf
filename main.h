@@ -28,10 +28,12 @@ int print_string(va_list);
 int print_number(va_list args_list);
 int print_integer(va_list arg_list);
 int print_binary(va_list);
+int unsigned_integer(va_list);
 
 /* additional functions */
 unsigned int base_len(unsigned int, int);
 void _writebase(char *str);
 char *rev_string(char *s);
 char *_memcpy(char *dest, char *scr, unsigned int n);
+int print_unsgined_number(unsigned int);
 #endif
