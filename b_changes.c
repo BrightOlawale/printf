@@ -84,7 +84,7 @@ int print_octal(va_list arr_list)
 
 /**
  *print_HeX - prints base 16 representation of number in uppercase
- *@arr_list: argument list passed to print_Hex
+ *@arr_list: argument list passed to print_Hex function
  *Return: number of character printed
  */
 
