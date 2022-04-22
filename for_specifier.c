@@ -45,7 +45,7 @@ int print_integer(va_list arr_list)
 
 /**
  * unsigned_integer - Prints Unsigned integers
- * @list: List of all of the argumets
+ * @arr_list: List of all of the argumets
  * Return: a count of the numbers
  */
 int unsigned_integer(va_list arr_list)
