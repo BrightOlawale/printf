@@ -28,6 +28,7 @@ int print_string(va_list);
 int print_number(va_list args_list);
 int print_integer(va_list arg_list);
 int print_binary(va_list);
+int print_octal(va_list);
 
 /* additional functions */
 unsigned int base_len(unsigned int, int);
