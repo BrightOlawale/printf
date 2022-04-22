@@ -11,12 +11,11 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 	int counter = 0, char_no, i, j;
 
 	for (i = 0; format[i] != '\0'; i++)
-	{
 		if (format[i] == '%')
 		{
 			for (j = 0; options[j].symb != NULL; j++)
 			{
-				if (format[i] == '%' && format[i + 1] == '%')
+				if (format[i + 1] == '%')
 				{
 					_writechar('%');
 					counter++;
@@ -36,6 +35,7 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 				if (format[i + 1] != '\0')
 				{
 					_writechar(format[i]);
+					_writechar(format[i + 1]);
 					counter = counter + 1;
 				}
 				else
@@ -46,6 +46,5 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 		else
 			_writechar(format[i]);
 			counter++;
-	}
 	return (counter);
 }
