@@ -43,7 +43,9 @@ int compute(const char *format, symbfunc options[], va_list arg_param)
 			i++;
 		}
 		else
+		{
 			_writechar(format[i]);
 			counter++;
+		}
 	return (counter);
 }
