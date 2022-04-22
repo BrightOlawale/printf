@@ -31,7 +31,7 @@ int print_binary(va_list);
 int unsigned_integer(va_list);
 int print_octal(va_list);
 int print_HeX(va_list);
-int print_hex(va_list list);
+int print_hex(va_list);
 
 /* additional functions */
 unsigned int base_len(unsigned int, int);

@@ -150,10 +150,10 @@ int hex_check(int num, char x)
 
 /**
  * print_hex - Prints a representation of a decimal number on base16 lowercase
- * @list: List of the arguments passed to the function
+ * @arr_list: List of the arguments passed to the function
  * Return: Number of characters printed
  */
-int print_heX(va_list arr_list)
+int print_hex(va_list arr_list)
 {
 	unsigned int num;
 	int len;
@@ -176,7 +176,7 @@ int print_heX(va_list arr_list)
 		rem_num = num % 16;
 		if (rem_num > 9)
 		{
-			rem_num = hex_check(rem_num, 'X');
+			rem_num = hex_check(rem_num, 'x');
 			hex_rep[len] = rem_num;
 		}
 		else
