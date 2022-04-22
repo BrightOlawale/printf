@@ -32,6 +32,11 @@ unsigned int base_len(unsigned int num, int base)
 	return (i);
 }
 
+/**
+ * rev_string - reverses a string in place
+ * @s: string to reverse
+ * Return: A pointer to a character
+ */
 
 char *rev_string(char *s)
 {
@@ -56,6 +61,13 @@ char *rev_string(char *s)
 	}
 	return (dest);
 }
+/**
+ *  _memcpy - copy memory area
+ *  @dest: Destination for copying
+ *  @src: Source to copy from
+ *  @n: The number of bytes to copy
+ *  Return: The _memcpy() function returns a pointer to dest.
+ */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
