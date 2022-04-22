@@ -15,7 +15,7 @@ int print_binary(va_list arr_list)
 
 	num = va_arg(arr_list, unsigned int);
 	if (num == 0)
-		return (_writchar('0'));
+		return (_writechar('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 2);
@@ -35,7 +35,7 @@ int print_binary(va_list arr_list)
 	rev_str = rev_string(str);
 	if (rev_str == NULL)
 		return (-1);
-	write_base(rev_str);
+	_writebase(rev_str);
 	free(str);
 	free(rev_str);
 	return (len);
@@ -80,7 +80,7 @@ int print_hex(va_list arr_list)
 	rev_hex = rev_string(hex_rep);
 	if (rev_hex == NULL)
 		return (-1);
-	write_base(rev_hex);
+	_writebase(rev_hex);
 	free(hex_rep);
 	free(rev_hex);
 	return (len);
