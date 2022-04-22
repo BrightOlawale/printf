@@ -32,11 +32,6 @@ int print_binary(va_list);
 /* additional functions */
 unsigned int base_len(unsigned int, int);
 void _writebase(char *str);
-
-
-
-
-
-/* Helper function */
-int print_unsgined_number(unsigned int);
+char *rev_string(char *s);
+char *_memcpy(char *dest, char *scr, unsigned int n);
 #endif
