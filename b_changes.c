@@ -42,49 +42,10 @@ int print_binary(va_list arr_list)
 }
 
 /**
- * print_hex - Prints a representation of a decimal number on base16 lowercase
- * @arr_list: List of the arguments passed to the function
- * Return: Number of characters printed
+ * print_octal - print octal base representation of the number
+ * @arr_list: arguement passed to print_octal
+ * Return: number of character printed
  */
-int print_hex(va_list arr_list)
-{
-	unsigned int num;
-	int len;
-	int rem_num;
-	char *hex_rep;
-	char *rev_hex;
-
-	num = va_arg(arr_list, unsigned int);
-
-	if (num == 0)
-		return (_writechar('0'));
-	if (num < 1)
-		return (-1);
-	len = base_len(num, 16);
-	hex_rep = malloc(sizeof(char) * len + 1);
-	if (hex_rep == NULL)
-		return (-1);
-	for (len = 0; num > 0; len++)
-	{
-		rem_num = num % 16;
-		if (rem_num > 9)
-		{
-			rem_num = hex_check(rem_num, 'x');
-			hex_rep[len] = rem_num;
-		}
-		else
-			hex_rep[len] = rem_num + 48;
-		num = num / 16;
-	}
-	hex_rep[len] = '\0';
-	rev_hex = rev_string(hex_rep);
-	if (rev_hex == NULL)
-		return (-1);
-	_writebase(rev_hex);
-	free(hex_rep);
-	free(rev_hex);
-	return (len);
-}
 
 int print_octal(va_list arr_list)
 {
@@ -118,6 +79,52 @@ int print_octal(va_list arr_list)
 	_writebase(rev_str);
 	free(octal_rep);
 	free(rev_str);
+	return (len);
+}
+
+/**
+ *print_HeX - prints base 16 representation of number in uppercase
+ *@arr_list: argument list passed to print_Hex
+ *Return: number of character printed
+ */
+
+int print_HeX(va_list arr_list)
+{
+	unsigned int num;
+	int len;
+	int rem_num;
+	char *hex_rep;
+	char *rev_hex;
+
+	num = va_arg(arr_list, unsigned int);
+
+	if (num == 0)
+		return (_writechar('0'));
+	if (num < 1)
+		return (-1);
+	len = base_len(num, 16);
+	hex_rep = malloc(sizeof(char) * len + 1);
+	if (hex_rep == NULL)
+		return (-1);
+	for (len = 0; num > 0; len++)
+	{
+		rem_num = num % 16;
+		if (rem_num > 9)
+		{
+			rem_num = hex_check(rem_num, 'X');
+			hex_rep[len] = rem_num;
+		}
+		else
+			hex_rep[len] = rem_num + 48;
+		num = num / 16;
+	}
+	hex_rep[len] = '\0';
+	rev_hex = rev_string(hex_rep);
+	if (rev_hex == NULL)
+		return (-1);
+	_writebase(rev_hex);
+	free(hex_rep);
+	free(rev_hex);
 	return (len);
 }
 
