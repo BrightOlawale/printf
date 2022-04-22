@@ -1,10 +1,10 @@
-.TH man 3 "19th Apirl 2022 "  "_printf man page"
-.SH NAME
-_printf
+Printf
+
+SYNOPSIS
 An implementation of the printf function.
-.SH SYNOPSIS
 To use this function the #include "main.h" is needed.
-.SH DESCRIPTION
+
+DESCRIPTION
 write output to stdout, the standard output stream
 _printf is a formatting function that is used to print a string to stdout.
 _printf also contains a format specifier that is replaced by the actual value during execution
@@ -15,7 +15,8 @@ _print writes the number of characters printed (excluding the null byte used to 
 .SH EXAMPLES
 To print the output of mltiplication of to intergers
 _printf("the multiplication of %d and %d is %d", a * b, mul);
-.SH USAGE
+
+USAGE
 %c: To be used to print characters
 .RS 0
 %s: To be used to print strings
